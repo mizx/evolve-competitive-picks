@@ -39,6 +39,18 @@ h1, p.lead {
     color: #FD391E;
 }
 
+.nav.navbar-nav.navbar-right .action {
+    color: #FD391E;
+    font-size: 24px;
+    padding: 8px 15px;
+    text-transform: uppercase;
+}
+
+button.map {
+    background: transparent;
+    border: 0;
+}
+
 .thumbnail {
     border: none;
     padding: 0;
@@ -73,7 +85,7 @@ h1, p.lead {
 
 .thumbnail.banned {
     background: url('/img/x.png');
-    background-position: center;
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -84,7 +96,14 @@ h1, p.lead {
 
 .thumbnail.checked {
     background: url('/img/check.png');
-    background-position: center;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.thumbnail.tie {
+    background: url('/img/tie.png');
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
