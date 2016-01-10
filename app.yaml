@@ -10,16 +10,23 @@ handlers:
   upload: favicon\.ico
 
 - url: /img
-  static_dir: img
-  
-- url: /font
-  static_dir: font
-  
-- url: /css
-  static_dir: css
+  static_dir: app/img
 
-- url: .*
-  script: main.app
+- url: /font
+  static_dir: app/font
+
+- url: /css
+  static_dir: app/css
+
+- url: /js
+  static_dir: app/js
+
+- url: /partials
+  static_dir: app/partials
+
+- url: /.*
+  static_files: app/index.html
+  upload: app/index.html
 
 libraries:
 - name: webapp2

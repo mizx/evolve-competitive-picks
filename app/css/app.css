@@ -1,0 +1,111 @@
+@font-face {
+    font-family: ultralight;
+    src: url('/font/ultralight.woff');
+}
+
+@font-face {
+    font-family: 'unicode sans medium';
+    src: url('/font/medium.woff');
+    font-weight: bold;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: url('http://evolvechallenges.com/img/bg/default.png');
+  background-size: cover;
+  padding-top: 70px;
+}
+.navbar-default {
+    background-color: #000;
+    border-bottom: 2px solid #FD391E
+}
+.navbar-default .navbar-brand {
+    color: #FD391E;
+    text-transform: uppercase;
+}
+.navbar-default .navbar-nav>li>a {
+    text-transform: uppercase;
+    color: #FD391E;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #000;
+    background-color: #e7e7e7;
+}
+h1 {
+    text-transform: uppercase;
+}
+h1, p.lead {
+    color: #FD391E;
+}
+
+.thumbnail {
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    background: #000;
+    color: #FD391E;
+    opacity: .8;
+    cursor: pointer;
+}
+
+.thumbnail img {
+    opacity: .7;
+}
+
+.thumbnail .title {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 12px;
+    font-size: 150%;
+    background: #000;
+}
+
+.thumbnail.selected .title, .thumbnail:hover .title {
+    background: #e7e7e7;
+    color: #000;
+    opacity: 1.0;
+}
+
+.thumbnail.selected img, .thumbnail:hover img {
+    opacity: .85;
+}
+
+.thumbnail.banned {
+    background: url('/img/x.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.thumbnail.banned img {
+    opacity: .5;
+}
+
+.thumbnail.checked {
+    background: url('/img/check.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.thumbnail .title .description {
+    font-size: 70%;
+}
+
+
+::-webkit-scrollbar
+{
+  width: 12px;  /* for vertical scrollbars */
+  height: 12px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+  background: rgba(255, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: rgba(255, 0, 0, 0.5);
+}

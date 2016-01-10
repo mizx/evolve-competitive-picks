@@ -1,0 +1,19 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>Map Bans</h1>
+            <p class="lead">Select a map to ban for both teams</p>
+            <div class="row row-horizon">
+                <div ng-repeat="map in maps" class="col-sm-5 col-md-4 col-lg-2">
+                    <div class="thumbnail" ng-class="{banned: map.name == 'distillery', checked: map.name == 'fusion plant'}">
+                        <img src="{{ map.image }}">
+                        <div class="title">
+                            {{ map.name }}
+                            <div class="description">Team Name</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
