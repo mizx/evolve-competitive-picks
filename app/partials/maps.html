@@ -1,19 +1,20 @@
-<div class="container-fluid">
+<div class="container">
     <div class="row">
         <div class="col-sm-12">
             <div class="row">
             <!--<div class="row row-horizon">-->
-                <button ng-repeat="map in maps track by $index" class="map col-sm-5 col-md-4 col-lg-2" ng-class="{'col-lg-offset-1': $index % 5 == 0}" ng-disabled="map.name == 'armory'">
-                    <!--<div >-->
+                <div ng-repeat="map in maps">
+                    <button class="col-lg-2 map" ng-class="{'col-lg-offset-1': $index % 5 == 0}" ng-disabled="map.name == 'armory'">
                         <div class="thumbnail" ng-class="{banned: map.name == 'distillery', checked: map.name == 'fusion plant', tie: map.name == 'medlab'}">
                             <img class="img-responsive" src="{{ map.image }}">
                             <div class="title">
                                 {{ map.name }}
-                                <div class="description">Team Name</div>
+                                <!--<div class="description">Team Name</div>-->
                             </div>
                         </div>
-                    <!--</div>-->
-                </button>
+                    </button>
+                    <div class="clearfix" ng-if="($index + 1) % 5 == 0"></div>
+                </div>
             </div>
         </div>
     </div>

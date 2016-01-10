@@ -62,14 +62,14 @@ button.map {
 }
 
 .thumbnail img {
-    opacity: .7;
+    opacity: .85;
 }
 
 .thumbnail .title {
     text-transform: uppercase;
     text-align: center;
     padding: 12px;
-    font-size: 150%;
+    font-size: 120%;
     background: #000;
 }
 
@@ -109,7 +109,7 @@ button.map {
 }
 
 .thumbnail .title .description {
-    font-size: 70%;
+    font-size: 80%;
 }
 
 
