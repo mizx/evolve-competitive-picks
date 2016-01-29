@@ -5,11 +5,27 @@ var app = angular.module('evolvePickerApp',
 ).run();
 
 app.config(function($routeProvider, $locationProvider) {
-    $routeProvider.when('/', {
+    $routeProvider
+    .when('/', {
+        controller: 'WaitingController',
+        templateUrl: '/partials/lobby.html'
+    })
+    .when('/start', {
+        controller: 'StartController',
+        templateUrl: '/partials/start.html'
+    }).when('/maps', {
         controller: 'MasterController',
         templateUrl: '/partials/maps.html',
     });
     $locationProvider.html5Mode(true);
+});
+
+app.controller('WaitingController', function($scope) {
+    console.log('waiting');
+});
+
+app.controller('StartController', function($scope) {
+    console.log('starting');
 });
 
 app.controller('MasterController', function($scope, MAPS) {

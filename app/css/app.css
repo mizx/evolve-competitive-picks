@@ -10,7 +10,7 @@
 }
 body {
   font-family: 'Open Sans', sans-serif;
-  background: url('http://evolvechallenges.com/img/bg/default.png');
+  background: url('/img/default.png');
   background-size: cover;
   padding-top: 70px;
 }
@@ -110,6 +110,10 @@ button.map {
 
 .thumbnail .title .description {
     font-size: 80%;
+}
+
+.form-control {
+    border-radius: 0;
 }
 
 
